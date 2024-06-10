@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "server:dev": "bun run server/index.ts"
+    "server:dev": "bun run server/index.ts",
+    "client:dev": "vite"
   },
   "dependencies": {
     "@types/cors": "^2.8.17",
