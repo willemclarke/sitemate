@@ -14,6 +14,15 @@ export async function init() {
   await Bun.write(FILE_PATH, JSON.stringify(issues));
 }
 
+export async function all(): Promise<Issue[]> {
+  const file = Bun.file(FILE_PATH);
+
+  const issues = await file.text();
+  const parsed = JSON.parse(issues) as Issue[];
+
+  return parsed;
+}
+
 export async function create(issue: Issue): Promise<Issue[]> {
   const file = Bun.file(FILE_PATH);
 

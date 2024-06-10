@@ -1,6 +1,1 @@
-[
-  { "id": "1", "title": "Wrong import syntax", "description": "xyz" },
-  { "id": "2", "title": "Wrong use of let", "description": "abc" },
-  { "id": "3", "title": "Postman issue", "description": "hello" },
-  { "id": "5", "title": "New Issue 5", "description": "hello world 2" }
-]
+[{"id":"1","title":"Wrong import syntax","description":"xyz"},{"id":"25e8fd12-7cb3-489a-813d-6cd7a953d205","title":"Some hardcoded issue","description":"adding an issue from UI"},{"id":"2","title":"UPDATING THE TITLE","description":"UPDATING THE BODY"}]

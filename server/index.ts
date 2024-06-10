@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import * as service from './service';
-// app.use(cors());
+import cors from 'cors';
 
 export interface Issue {
   id: string;
@@ -11,15 +11,21 @@ export interface Issue {
 
 await service.init();
 const app = express();
-const port = process.env.PORT ?? 3000;
+const port = process.env.PORT ?? 4000;
 
 app.use(bodyParser.json());
+app.use(cors());
 
 app.post('/create', async (req, res) => {
   const issue = req.body;
 
   const createdIssue = await service.create(issue);
   return res.status(200).json(createdIssue);
+});
+
+app.get('/all', async (req, res) => {
+  const allIssues = await service.all();
+  return res.status(200).json(allIssues);
 });
 
 app.post('/update', async (req, res) => {
