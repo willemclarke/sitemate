@@ -5,3 +5,11 @@ To run:
 2. `bun install`
 3. in 1 pane: `bun run server:dev`
 4. in another pane: `bun run vite`
+
+
+Tech:
+- Bun <3
+- typescript
+- react
+- express
+- react-query
