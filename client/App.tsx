@@ -53,7 +53,7 @@ function App() {
       <button onClick={onCreateClicked}>Create</button>
       <button onClick={onDeleteClicked}>Delete</button>
       <button onClick={onUpdateClicked}>Update</button>
-      <pre style={{ width: '500px' }}>{JSON.stringify(issuesQuery.data)}</pre>
+      <pre style={{ width: '1000px' }}>{JSON.stringify(issuesQuery.data)}</pre>
     </div>
   );
 }
