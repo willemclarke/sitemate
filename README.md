@@ -1,4 +1,4 @@
-Sitemate self proctored rest api challenge
+Sitemate self proctored rest api challenge (2hr time limit - including recording loom video)
 
 Things to improve:
 
